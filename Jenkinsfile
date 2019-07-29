@@ -30,7 +30,7 @@ pipeline {
 
             steps {
 
-                sh 'sudo rm -r *;sudo https://github.com/satyamuralidhar/tf-integrate.git'
+                sh 'sudo https://github.com/satyamuralidhar/tf-integrate.git'
 
             }
 
