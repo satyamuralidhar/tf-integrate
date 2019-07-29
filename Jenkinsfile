@@ -40,7 +40,7 @@ pipeline {
 
             steps {
 
-                sh 'sudo cp /home/ubuntu/vars.tf ./jenkins/'
+                sh 'sudo cp /home/ubuntu/terraform/vars.tf ./jenkins/'
 
             }
 
@@ -50,7 +50,7 @@ pipeline {
 
             steps {
 
-                sh 'sudo /home/ubuntu/terraform init ./jenkins'
+                sh 'sudo /home/ubuntu/terraform/terraform init ./jenkins'
 
             }
 
@@ -60,7 +60,7 @@ pipeline {
 
             steps {
 
-                sh 'ls ./jenkins; sudo /home/ubuntu/terraform plan ./jenkins'
+                sh 'ls ./jenkins; sudo /home/ubuntu/terraform/terraform plan ./jenkins'
 
             }
 
