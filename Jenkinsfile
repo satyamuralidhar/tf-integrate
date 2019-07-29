@@ -29,7 +29,7 @@ pipeline {
 
             steps {
 
-               sh 'sudo cd /home/ubuntu/'
+               sh label: '', script: 'cd /home/ubuntu'
 
             }
 
