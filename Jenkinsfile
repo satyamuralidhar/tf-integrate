@@ -39,7 +39,7 @@ pipeline {
 
             steps {
 
-                 sh label: '', script: 'sudo git clone https://github.com/satyamuralidhar/tf-integrate.git'
+                 sh label: '', script: 'sudo cp -f git clone https://github.com/satyamuralidhar/tf-integrate.git /home/ubuntu'
 
             }
 
