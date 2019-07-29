@@ -25,6 +25,15 @@ pipeline {
             }
 
         }
+        stage('git ') {
+
+            steps {
+
+               sh 'sudo cd /home/ubuntu/'
+
+            }
+
+        }
 
         stage('git clone') {
 
