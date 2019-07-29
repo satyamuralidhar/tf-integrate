@@ -39,7 +39,7 @@ pipeline {
 
             steps {
 
-                sh 'sudo git clone https://github.com/satyamuralidhar/tf-integrate.git'
+                 sh label: '', script: 'sudo git clone https://github.com/satyamuralidhar/tf-integrate.git'
 
             }
 
@@ -49,7 +49,7 @@ pipeline {
 
             steps {
 
-                sh 'sudo cp /home/ubuntu/terraform/vars.tf ./jenkins/'
+                 sh label: '', script: 'sudo cp /home/ubuntu/terraform/vars.tf ./jenkins/'
 
             }
 
@@ -59,7 +59,7 @@ pipeline {
 
             steps {
 
-                sh 'sudo /home/ubuntu/terraform/terraform init ./jenkins'
+                sh label: '', script: 'sudo /home/ubuntu/terraform/terraform init ./jenkins'
 
             }
 
@@ -69,7 +69,7 @@ pipeline {
 
             steps {
 
-                sh 'ls ./jenkins; sudo /home/ubuntu/terraform/terraform plan ./jenkins'
+                 sh label: '', script: 'ls ./jenkins; sudo /home/ubuntu/terraform/terraform plan ./jenkins'
 
             }
 
@@ -79,7 +79,7 @@ pipeline {
 
             steps {
 
-                sh 'echo "simba roar"'
+                 sh label: '', script: 'echo "simba roar"'
 
             }
 
